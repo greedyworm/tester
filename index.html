@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>WhatsApp Templates</title>
+  </head>
+  <body>
+    <div class="w3-row-padding w3-padding-large w3-container">
+      <div class="w3-padding-large w3-card-2 w3-display-middle" style="width: 550px">
+        <div class="w3-container w3-teal w3-section">
+          <h2>Input Form</h2>
+        </div>
+        <form class="w3-container w3-section" onsubmit="sendWa(event)">
+          <label class="w3-text-teal w3-margin-top"><b>Nama Lengkap</b></label>
+          <input id="name" class="w3-input w3-border w3-light-grey w3-margin-bottom" type="text" required />
+          <label class="w3-text-teal w3-margin-top"><b>Jenis Kelamin</b></label>
+          <input id="gender" class="w3-input w3-border w3-light-grey w3-margin-bottom" type="text" reqiured />
+          <label class="w3-text-teal w3-margin-top"><b>Tempat Lahir</b></label>
+          <input id="birthPlace" class="w3-input w3-border w3-light-grey w3-margin-bottom" type="text" required />
+          <label class="w3-text-teal w3-margin-top"><b>Alamat</b></label>
+          <input id="address" class="w3-input w3-border w3-light-grey w3-margin-bottom" type="text" required />
+          <label class="w3-text-teal w3-margin-top"><b>Nomor Telepon</b></label>
+          <input id="phone" class="w3-input w3-border w3-light-grey w3-margin-bottom" type="tel" pattern="^(\+62|62)?[\s-]?0?8[1-9]{1}\d{1}[\s-]?\d{4}[\s-]?\d{2,5}$" required />
+          <button class="w3-btn w3-blue-grey w3-margin-top w3-round" type="submit">Simpan</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
